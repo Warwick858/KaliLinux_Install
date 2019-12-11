@@ -22,10 +22,11 @@
 #### Installing the OS ####
 
 * Plugin the flash drive.
-* Makre sure power and an ethernet or WiFi is available.
+* Make sure power and an ethernet or WiFi is available.
 * Turn on the PC.
-* Once the manufacturer logo appears, continiously press F12 (or your OEM's boot option key) to access the boot menu.
-* From the boot options, select "USB-drive".
+* Once the manufacturer logo appears, continously press F12 (or your OEM's boot option key) to access the boot menu.
+* From the boot options, select "USB Storage Device".
+
 * Once the Kali Linux installer menu appears, select "Install".
 * STOP!  Before proceeding with the next step of the installer (language selection), you need to manually mount the cd-rom.
   * Press 'alt + F2' to open a console.  Press enter when prompted.
@@ -34,6 +35,7 @@
     * mount -t vfat /dev/sdb1 /cdrom
   * Type 'exit' and press enter to exit the console.
   * Press 'alt + F1' to switch back to the kali linux installer.
+  
 * Proceed with the installation.
 * Select language, keyboard, etc.
 * When you get to the network setup step, select the wireless network adapter.
@@ -41,12 +43,15 @@
 * Leave the hostname as 'kali'.
 * When prompted for a domain name, leave it blank and select 'continue'.
 * Setup the root password. Enter it again to confirm.
+
 * Partioning: (select the following options)
   * 'Guided - use full partition'
   * 'All files in one partition'
   * 'Finish partitioning and write changes to disk'
   * When prompted to write the changes to disk, select 'Yes'.
-  * 
+  
+* GRUB Boot Loader:
+ * Check partitions using 'fdisk -l'
   
   
 
